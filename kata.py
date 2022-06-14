@@ -33,7 +33,11 @@ def eight():
 def nine():
     return 9
 
-def plus(): #your code here
-def minus(): #your code here
-def times(): #your code here
-def divided_by(): #your code here
+def plus():
+    return "plus"
+def minus():
+    return "minus"
+def times():
+    return "times"
+def divided_by():
+    return "divided_by"
