@@ -12,16 +12,26 @@
 # The most outer function represents the left operand, the most inner function represents the right operand
 # Division should be integer division. For example, this should return 2, not 2.666666...:
 
-def zero(): #your code here
-def one(): #your code here
-def two(): #your code here
-def three(): #your code here
-def four(): #your code here
-def five(): #your code here
-def six(): #your code here
-def seven(): #your code here
-def eight(): #your code here
-def nine(): #your code here
+def zero():
+    return 0
+def one():
+    return 1
+def two():
+    return 2
+def three():
+    return 3
+def four():
+    return 4
+def five():
+    return 5
+def six():
+    return 6
+def seven():
+    return 7
+def eight():
+    return 8
+def nine():
+    return 9
 
 def plus(): #your code here
 def minus(): #your code here
