@@ -1,6 +1,8 @@
 import time
 # This time we want to write calculations using functions and get the results. Let's have a look at some examples:
 
+# so much for this
+
 # seven(times(five())) # must return 35
 # four(plus(nine())) # must return 13
 # eight(minus(three())) # must return 5
@@ -13,32 +15,62 @@ import time
 # The most outer function represents the left operand, the most inner function represents the right operand
 # Division should be integer division. For example, this should return 2, not 2.666666...:
 
-def zero():
-    return 0
-def one():
-    return 1
-def two():
-    return 2
-def three():
-    return 3
-def four():
-    return 4
-def five():
-    return 5
-def six():
-    return 6
-def seven():
-    return 7
-def eight():
-    return 8
-def nine():
-    return 9
+def operation(expr, number):
+    if expr[0] == "+":
+        return int(number)+int(expr[1])
+    if expr[0] == "-":
+        return int(number)-int(expr[1])
+    if expr[0] == "*":
+        return int(number)*int(expr[1])
+    if expr[0] == "/":
+        return int(int(number)/int(expr[1]))
 
-def plus():
-    return "plus"
-def minus():
-    return "minus"
-def times():
-    return "times"
-def divided_by():
-    return "divided_by"
+def zero(expr=None, number="0"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def one(expr=None, number="1"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def two(expr=None, number="2"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def three(expr=None, number="3"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def four(expr=None, number="4"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def five(expr=None, number="5"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def six(expr=None, number="6"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def seven(expr=None, number="7"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def eight(expr=None, number="8"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+def nine(expr=None, number="9"):
+    if expr is None:
+        return number
+    return operation(expr, number)
+
+def plus(expr):
+    return "+"+str(expr)
+def minus(expr):
+    return "-"+str(expr)
+def times(expr):
+    return "*"+str(expr)
+def divided_by(expr):
+    return "/"+str(expr)
